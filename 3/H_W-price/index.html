@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Price</title>
+    <link rel="stylesheet" href="./assets/style/main.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="app">
+        <h1 class="app__title">Приложение для установки цен</h1>
+        <header class="header ">
+            <div class="header__subtitle">
+                Список товаров
+                <div class="header__item">
+                    <p class="header__description">Наименование</p>
+                    <p class="header__description">Цена</p>
+                </div>
+            </div>
+            <div class="header__subtitle header__subtitle--yellow">Изменить цену</div>
+            <div class="header__subtitle header__subtitle--red">Добавить скидку, %</div>
+            <div class="header__subtitle header__subtitle--green">Добавить наценку, %</div>
+        </header>
+        <div class="product">
+            <div class="product__item">
+                <div id="name1" class="product__content"></div>
+                <div id="price1" class="product__content"></div>
+            </div>
+            <div class="product__item">
+                <input type="text"id="change1"  class="product__input" placeholder="Введите цену" onchange="toChangePrice1()">
+                <button class="product__btn">Ввод</button>
+            </div>
+            <div class="product__item">
+                <input type="text" id="discount1" class="product__input" placeholder="Введите скидку" onchange="toDiscountPrice1()">
+                <button class="product__btn">Ввод</button>
+            </div>
+            <div class="product__item">
+                <input type="text" id="extraCharge1" class="product__input" placeholder="Введите наценку" onchange="toExtraChargePrice1()">
+                <button class="product__btn">Ввод</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product__item">
+                <div id="name2" class="product__content"></div>
+                <div id="price2" class="product__content"></div>
+            </div>
+            <div class="product__item">
+                <input type="text" id="change2" class="product__input" placeholder="Введите цену" onchange="toChangePrice2()">
+                <button class="product__btn">Ввод</button>
+            </div>
+            <div class="product__item">
+                <input type="text" id="discount2" class="product__input" placeholder="Введите скидку" onchange="toDiscountPrice2()">
+                <button class="product__btn">Ввод</button>
+            </div>
+            <div class="product__item">
+                <input type="text" id="extraCharge2" class="product__input" placeholder="Введите наценку" onchange="toExtraChargePrice2()">
+                <button class="product__btn">Ввод</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

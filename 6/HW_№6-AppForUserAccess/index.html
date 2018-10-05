@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW_№6</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+    <h1 class="wrap__title">Получить достп: <span class="wrap__message"></span></h1>
+
+
+    <div class="wrap__modal">
+        <div class="modal modal--one">
+            <div class="modal__content">
+                <button class="modal__close modal__close--one"></button>
+                <p class="modal__message modal__message--one"></p>
+                <h3 class="modal__title">Введите пароль:</h3>
+                <p class="modal__description">Пароль должен содержать: от 6 до 20 символов, буквы и цыфры.</p>
+                <input type="password"
+                       id="pass"
+                       class="modal__input"
+                       value=""
+                       placeholder="Введите пароль"
+                       onchange="toGetPassword()"
+                >
+                <button class="modal__enter modal__enter--one">Ввод</button>
+            </div>
+        </div>
+        <div class="modal modal--two">
+            <div class="modal__content">
+                <button class="modal__close modal__close--two"></button>
+                <p class="modal__message modal__message--two"></p>
+                <h3 class="modal__title">Введие число:</h3>
+                <p class="modal__description">Условия для числа: (простое или четное или кратное 10)</p>
+                <input type="type"
+                       id="num"
+                       class="modal__input"
+                       value=""
+                       placeholder="Введите пароль"
+                       onchange="toGetSimpleNumber()"
+                >
+                <button class="modal__enter modal__enter--two">Ввод</button>
+            </div>
+        </div>
+        <div class="modal modal--three">
+            <div class="modal__content">
+                <button class="modal__close modal__close--three"></button>
+                <p class="modal__message modal__message--three"></p>
+                <h3 class="modal__title">Введие числа:</h3>
+                <p class="modal__description">Введите два трехзначных числа:</p>
+                <input type="type"
+                       id="sum1"
+                       class="modal__input"
+                       value=""
+                       placeholder="Введите пароль"
+                >
+                <input type="type"
+                       id="sum2"
+                       class="modal__input"
+                       value=""
+                       placeholder="Введите пароль"
+                       onchange="toGetSumNumber()"
+                >
+                <button class="modal__enter modal__enter--three">Ввод</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

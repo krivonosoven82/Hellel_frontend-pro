@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.wrap{
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  &__modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  &--one{
+    z-index: 3;
+  }
+  &--two{
+    z-index: 2;
+  }
+  &__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 640px;
+    height: 480px;
+    padding: 16px 0 0 16px;
+    border-radius: 7px;
+    background-color: #f0f8ff;
+    z-index: 1;
+  }
+  &__close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid #b8b8b8;
+    outline: none;
+    cursor: pointer;
+  }
+  &__message{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    &--two{
+      font-size: 20px;
+    }
+  }
+  &__title{
+    margin-bottom: 60px;
+  }
+  &__description{
+    margin-bottom: 30px;
+  }
+  &__input{
+    width: 495px;
+    height: 40px;
+    margin-bottom: 30px;
+    padding-left: 7px;
+    border-radius: 7px;
+    border: 1px solid #b8b8b8;
+    outline: none;
+    font-size: 22px;
+  }
+  &__enter{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #b8b8b8;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
+.notValid{
+  background-color: #ff0000;
+}
+.close{
+  display: none;
+}
+.noAccess{
+  color: #ff0000;
+}
+.access{
+  color: #00ff00;
+}
