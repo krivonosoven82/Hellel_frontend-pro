@@ -1,0 +1,149 @@
+.content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  &__nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    padding-top: 7px;
+    background-color: $blue;
+  }
+  &__nav-title{
+    margin: 0 0 15px 7px;
+    color: $black;
+  }
+  &__nav-list{
+    margin-left: 14px;
+    list-style: none;
+  }
+  &__nav-listItem{
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover{
+      padding-left: 7px;
+      text-shadow: 1px 1px 3px $black;
+    }
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &__nav-close{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &::after{
+      content: '';
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 22px;
+      background-color: $black;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(45deg);
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 22px;
+      background-color: $black;
+    }
+    &:hover{
+      &::after, &::before{
+        height: 3px;
+        width: 24px;
+        box-shadow: 1px 1px 5px $shadow;
+      }
+    }
+  }
+  .content__nav-open{
+    position: absolute;
+    top: 7px;
+    right: -30px;
+    width: 30px;
+    height: 36px;
+    background-color: $blue;
+    transition: all .3s ease-in-out;
+    &:hover{
+      background-color: darken($blue, 15%);
+    }
+  }
+
+  &__body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    background-color: $white;
+  }
+  &__body-item{
+    display: none;
+  }
+  &__body-item.active{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+.open{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &__line{
+    width: 12px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: $white;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.openNav{
+  animation: openNav .07s ease-in-out forwards;
+}
+.closeNav{
+  animation: closeNav .07s ease-in-out forwards, fontsZero .07s ease-in-out forwards;
+}
+.active{}
+
+@keyframes openNav {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@keyframes closeNav {
+  0%{
+    width: 100%;
+    max-width: 300px;
+  }
+  100%{
+    width: 0;
+  }
+}
+@keyframes fontsZero {
+  100%{
+    font-size: 0;
+  }
+}
