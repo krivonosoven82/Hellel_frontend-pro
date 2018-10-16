@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="903127c2-ca2a-4a75-9912-2a692f4dfacd" name="Default Changelist" comment="" />
+    <list default="true" id="146920af-f59b-4d79-bd80-ab11280b012f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_№8-1/HW_№8-1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_№8-1/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/HW_№8-1/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../9/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="1379456482">
+    <session id="1575969947">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
@@ -19,35 +24,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="2" />
+          <entry key="js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="176" />
+          <entry key="js" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="176" />
+          <entry key="JavaScript" value="70" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.php.rename.constructor" />
-      <usages-collector id="statistics.php.new.test" />
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.php.composer.actions" />
-      <usages-collector id="statistics.php.new.class" />
-      <usages-collector id="statistics.php.composer.command.options" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HW_№8-1/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -55,8 +63,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HW_№9-1-apply/main.js" />
-        <option value="$PROJECT_DIR$/HW_№9-2-fibonacci/main.js" />
+        <option value="$PROJECT_DIR$/HW_№8-1/main.js" />
       </list>
     </option>
   </component>
@@ -66,14 +73,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="119" />
-    <option name="y" value="201" />
+    <option name="x" value="112" />
+    <option name="y" value="187" />
     <option name="width" value="1676" />
-    <option name="height" value="866" />
+    <option name="height" value="634" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -81,28 +85,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="9" type="462c0819:PsiDirectoryNode" />
+              <item name="8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="9" type="b2602c69:ProjectViewProjectNode" />
-              <item name="9" type="462c0819:PsiDirectoryNode" />
-              <item name="HW_№9-2-fibonacci" type="462c0819:PsiDirectoryNode" />
+              <item name="8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="8" type="462c0819:PsiDirectoryNode" />
+              <item name="HW_№8-1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../8" />
+    <property name="last_opened_file_path" value="D:/frontEndPro/HW_№8-1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -123,20 +127,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="903127c2-ca2a-4a75-9912-2a692f4dfacd" name="Default Changelist" comment="" />
-      <created>1539672575368</created>
+      <changelist id="146920af-f59b-4d79-bd80-ab11280b012f" name="Default Changelist" comment="" />
+      <created>1539674841652</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1539672575368</updated>
-      <workItem from="1539672576665" duration="1778000" />
+      <updated>1539674841652</updated>
+      <workItem from="1539674842819" duration="1087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1778000" />
+    <option name="totallyTimeSpent" value="1087000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="119" y="201" width="1676" height="866" extended-state="0" />
+    <frame x="112" y="187" width="1676" height="634" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -166,17 +170,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HW_№9-2-fibonacci/main.js">
+    <entry file="file://$PROJECT_DIR$/HW_№8-1/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HW_№9-1-apply/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="408">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
         </state>
       </provider>
     </entry>

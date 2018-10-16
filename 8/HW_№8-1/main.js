@@ -1,32 +1,89 @@
-let students = {
-    'Ivanov': [2000, 2004],
-    'Petrov': [2000, 2004],
-    'Trigubov': [2001, 2005],
-    'Foonticov': [2001, 2005],
-    'Seregin': [2001, 2005],
-    'Garbusov': [2002, 2006],
-    'Semenov': [2002, 2006],
-    'Alexeev': [2002, 2006],
-    'Kravtsov': [2003, 2007],
-    'Futin': [2003, 2007],
-    'Pole': [2004, 2008],
-    'Zemko': [2004, 2008],
-    'Kyvalov': [2004, 2008],
-    'Lyashko': [2005, 2009],
-    'Devochkin': [2005, 2009],
-};
+let startYear = 1989;
+let lastYear = 2002;
 
+let studentsDB = [
+    id1 = {
+        name: 'Ivanov',
+        start: 2000,
+        finish: 2005
+    },
+    id2 = {
+        name: 'Petrov',
+        start: 2000,
+        finish: 2005
+    },
+    id3 = {
+        name: 'Trigubov',
+        start: 2001,
+        finish: 2006
+    },
+    id4 = {
+        name: 'Foonticov',
+        start: 2001,
+        finish: 2006
+    },
+    id5 = {
+        name: 'Seregin',
+        start: 2002,
+        finish: 2007
+    },
+    id6 = {
+        name: 'Garbusov',
+        start: 2002,
+        finish: 2007
+    },
+    id7 = {
+        name: 'Semenov',
+        start: 2002,
+        finish: 2007
+    },
+    id8 = {
+        name: 'Alexeev',
+        start: 2002,
+        finish: 2007
+    },
+    id9 = {
+        name: 'Kravtsov',
+        start: 2003,
+        finish: 2008
+    },
+    id10 = {
+        name: 'Zemko',
+        start: 2003,
+        finish: 2008
+    },
+    id10 = {
+        name: 'Kyvalov',
+        start: 2004,
+        finish: 2009
+    },
+    id10 = {
+        name: 'Lyashko',
+        start: 2004,
+        finish: 2009
+    },
+    id10 = {
+        name: 'Devochkin',
+        start: 2005,
+        finish: 2010
+    }
+];
 
-function showName (start, end){
-    let key;
-    for( key in students){
-        if(students[key][0] >= start || students[key][1] <= end){
-           console.log(key);
+function showStudents (){
+    let result = 0;
+    let i;
+    for(i=0; i<this.length; i++){
+        if ((this[i].start >= startYear && this[i].start <= lastYear) || (this[i].finish >= startYear && this[i].finish <= lastYear)){
+            console.log(`${this[i].name}`);
+            result = result + 1;}
+        else{
+            result = result;
+            console.log(`В этот период училось ${result} человек`)
+            break;
         }
     }
 }
-
-showName(2000, 2009);
+showStudents.call(studentsDB);
 
 
 
