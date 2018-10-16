@@ -1,17 +1,23 @@
 const fibonacci = (n) => {
-    let a = 1;
-    let b = 1;
-    let c;
+    let numberStart = 1;
+    let result = 1;
+    let sum;
     let i;
 
-    for (i = 3; i <= n; i++) {
-        c = a + b;
-        a = b;
-        b = c;
+    if(n <= 0){
+        result = 0;
+      return console.log(result);
+    }else{
+        for (i = 3; i <= n; i++) {
+            sum = numberStart + result;
+            numberStart = result;
+            result = sum;
+        }
     }
-    return b;
+    return console.log(result);
 };
-console.log(fibonacci(3));
-console.log(fibonacci(7));
-console.log(fibonacci(8));
 
+fibonacci(0);
+fibonacci(1);
+fibonacci(3);
+fibonacci(6);

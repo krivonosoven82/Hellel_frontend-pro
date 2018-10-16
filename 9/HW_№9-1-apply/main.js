@@ -1,12 +1,12 @@
 function sum(){
-    return [].reduce.call(arguments, function(a, b){
-        return a + b;
+    return [].reduce.call(arguments, function(number1, number2){
+        return number1 + number2;
     });
 }
 
 function mul() {
-    return [].reduce.call(arguments, function(a, b){
-        return a * b;
+    return [].reduce.call(arguments, function(number1, number2){
+        return number1 * number2;
     });
 }
 function applyAll(func){
