@@ -1,50 +1,120 @@
-let students = {
-    'Ivanov': [2000, 2004],
-    'Petrov': [2000, 2004],
-    'Trigubov': [2001, 2005],
-    'Foonticov': [2001, 2005],
-    'Seregin': [2001, 2005],
-    'Garbusov': [2002, 2006],
-    'Semenov': [2002, 2006],
-    'Alexeev': [2002, 2006],
-    'Kravtsov': [2003, 2007],
-    'Futin': [2004, 2008],
-    'Pole': [2004, 2008],
-    'Zemko': [2004, 2008],
-    'Kyvalov': [2004, 2008],
-    'Lyashko': [2005, 2009],
-    'Devochkin': [2005, 2009],
-};
+let startYear = 1990;
+let lastYear = 2004;
 
+const studentsDB = [
+    id1 = {
+        name: 'Ivanov',
+        start: 2000,
+        finish: 2005
+    },
+    id2 = {
+        name: 'Petrov',
+        start: 2000,
+        finish: 2005
+    },
+    id3 = {
+        name: 'Trigubov',
+        start: 2001,
+        finish: 2006
+    },
+    id4 = {
+        name: 'Foonticov',
+        start: 2001,
+        finish: 2006
+    },
+    id5 = {
+        name: 'Seregin',
+        start: 2002,
+        finish: 2007
+    },
+    id6 = {
+        name: 'Garbusov',
+        start: 2002,
+        finish: 2007
+    },
+    id7 = {
+        name: 'Semenov',
+        start: 2002,
+        finish: 2007
+    },
+    id8 = {
+        name: 'Alexeev',
+        start: 2002,
+        finish: 2007
+    },
+    id9 = {
+        name: 'Kravtsov',
+        start: 2003,
+        finish: 2008
+    },
+    id10 = {
+        name: 'Zemko',
+        start: 2003,
+        finish: 2008
+    },
+    id10 = {
+        name: 'Kyvalov',
+        start: 2004,
+        finish: 2009
+    },
+    id10 = {
+        name: 'Lyashko',
+        start: 2004,
+        finish: 2009
+    },
+    id10 = {
+        name: 'Devochkin',
+        start: 2005,
+        finish: 2010
+    }
+];
 
-function showName (start, end){
-    let key;
-    let arr = [];
+    function getYearMaxStudents() {
+        let numberOfStudents = [];
+        let maxStudents = 0;
+        let maxYear = [];
+        let count = 0;
+        let indexDb = 0;
+        let key;
+        let i;
 
-    for( key in students){
-        if(students[key][0] >= start && students[key][1] <= end){
-            arr.push(students[key][0]);
+        if (startYear > lastYear) {
+            return console.log(`Неправильный диапазон. Дата начала не может быть больше даты окончания.`);
         }
-    }
-    let result = {};
-    for(let i = 0; i < arr.length; i++){
-        let a = arr[i];
-        if(result[a] != undefined){
-            ++result[a];
-        }else{
-            result[a] = 1;
+
+        for (startYear; startYear <= lastYear; startYear++) {
+            numberOfStudents[indexDb] = [];
+            numberOfStudents[indexDb][startYear] = 0;
+            for (i = 0; i < studentsDB.length; i++) {
+                if (startYear >= studentsDB[i].start && startYear <= studentsDB[i].finish) {
+                    numberOfStudents[indexDb][startYear]++;
+                }
+            }
+
+            if (numberOfStudents[indexDb][startYear] > maxStudents) {
+                maxStudents = numberOfStudents[indexDb][startYear];
+            }
+
+            indexDb++;
         }
+
+        if (!maxStudents) {
+            return console.log(`За данный период студентов не найдено`);
+        }
+
+        for (i = 0; i < numberOfStudents.length; i++) {
+            for (key in numberOfStudents[i]) {
+                if (maxStudents == numberOfStudents[i][key]) {
+                    maxYear[count] = key;
+                    count++;
+                }
+            }
+        }
+
+        return console.log(`Максимальное количество студентов училось в ${maxYear.join(', ')} году.`);
     }
-    for(let key in result){
-        console.log(`В ${key} году училось максимальное количество: ${result[key]}.`);
-       // year.push(result[key]);
-    }
-}
 
-showName(2000, 2005);
-
-
-
+getYearMaxStudents.call(studentsDB);
 
 
 
